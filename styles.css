@@ -1,1 +1,24 @@
 /*  your css code here. If applicable */
+body {
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+      min-height: 100vh;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(40, 20px); /* 40 cols x 20 rows = 800 boxes */
+      gap: 2px;
+    }
+    .box {
+      width: 20px;
+      height: 20px;
+      background-color: #222;
+      transition: background-color 0.3s;
+    }
+    .box:hover {
+      background-color: #00ffcc;
+    }
